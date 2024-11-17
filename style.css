@@ -354,15 +354,15 @@ section{
 /* Responsive düzen */
 @media screen and (max-width: 768px) {
    .projects_container::before {
-       left: 10px; /* Mobilde çizgiyi sola kaydır */
+       left: 5px; /* Mobilde çizgiyi sola kaydır */
        transform: none;
    }
    .dot {
-       left: 10px;
+       left: 0px;
        transform: none;
    }
    .project_content {
-       margin-left: 2.5rem; /* Mobilde daha az kaydır */
+       margin-left: 3rem; /* Mobilde daha az kaydır */
        width: 80%; /* Mobilde daha dar kutular */
    }
 }
@@ -531,4 +531,37 @@ ul{
     color: #fff;
     text-decoration: none;
     
+}
+@media (max-width:1285px){
+   html{font-size: 40%;}
+}
+
+@media (max-width: 991px) {
+   header {
+      padding: 10rem 3% ;
+   }
+
+   section{
+      padding: 15rem 3% 2rem;
+      
+   }
+   .project-items::before{
+      left: 7px;
+   }
+}
+.project_item:nth-child(2) {
+   padding-left: 37px; /* Sol padding ekledik */
+   padding-right: 0; /* Sağ padding sıfır */
+   text-align: left; /* Sol hizalama */
+   font-size: 40%;
+}
+
+/* Tüm tek numaralı kutulara hizalama */
+.project_item:nth-child(odd) {
+   padding-left: 37px;
+}
+
+/* Çift numaralı kutular */
+.project_item:nth-child(even) {
+   padding-right: 37px;
 }
