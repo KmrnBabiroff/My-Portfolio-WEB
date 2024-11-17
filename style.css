@@ -430,19 +430,25 @@ section{
 
 .footer_container{
 	max-width: 1110px;
-	margin:auto;
     margin-left: 400px;
+    align-items: center;
+    margin: 0 auto;
 }
 .row{
 	display: flex;
 	flex-wrap: wrap;
+   gap: 1rem; /* Her bir sütun arasına boşluk ekler */
+   justify-content: space-between; 
 }
+
 ul{
 	list-style: none;
 }
 .footer{
     background-color: var(--bg-color);
     padding: 70px 0;
+   
+    align-items: center; /* İçerikleri yatayda ortaladık */
 }
 .footer-col{
    width: 25%;
@@ -482,6 +488,7 @@ ul{
 	color: #185260;
 	display: block;
 	transition: all 0.3s ease;
+   
 }
 .footer-col ul li a:hover{
 	color: #ffffff;
@@ -498,7 +505,7 @@ ul{
    font-size: 2.5rem;
    border-radius: 50%;
    color: var(--main-color);
-   margin: 3rem 1.5rem 3rem 0;
+   margin: 0.5rem 1rem 0 0;
    transition: 300ms ease-in-out;
 }
 .footer-col .social-links a:hover{
@@ -509,12 +516,19 @@ ul{
 }
 
 #footerText{
-    color: #fff;
-    margin-left: 210px;
-}
+   
+   color: #fff;
+   font-size: 1.5rem; /* Yazı boyutunu büyüttük */
+   text-align: center;
+   margin: 0 auto; /* Otomatik yatay merkezleme */
+   padding: 20px 0; /* Yukarıdan ve aşağıdan boşluk */
+   display: block; /* Block seviyesi yapıldı */
+   width: 100%; /* Tüm genişliği kapsasın diye */
+  }
+  
+
 #footerText a{
     color: #fff;
     text-decoration: none;
-    text-align: center;
     
 }
