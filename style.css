@@ -533,7 +533,7 @@ ul{
     
 }
 @media (max-width:1285px){
-   html{font-size: 45%;}
+   html{font-size: 50%;}
 }
 
 @media (max-width: 991px) {
@@ -565,4 +565,81 @@ ul{
 .project_item:nth-child(even) {
    padding-right: 37px;
 }
+}
+
+
+@media (max-width: 768px) {
+   /* Header mobil uyumu */
+   .header {
+      padding: 1.5rem 3%;
+      flex-direction: column; /* Dikey düzen */
+      align-items: center; /* Ortalar */
+   }
+
+   .navbar {
+      display: none; /* Mobilde açılır menü için */
+   }
+
+   /* Home bölümü mobil uyumu */
+   .Home {
+      flex-direction: column; /* Dikey düzen */
+      text-align: center; /* Ortalar */
+      padding: 5rem 2rem;
+      gap: 2rem; /* Daha az boşluk */
+   }
+
+   .Home-content h1 {
+      font-size: 4.5rem; /* Daha küçük başlık */
+   }
+
+   .Home-content h3 {
+      font-size: 2.5rem;
+   }
+
+   .Home-img img {
+      width: 80%; /* Resim boyutu küçültüldü */
+      max-width: 300px;
+   }
+
+   /* Sosyal medya ikonları */
+   .social-icons a {
+      width: 3.5rem; /* Küçük ikonlar */
+      height: 3.5rem;
+      font-size: 2rem;
+   }
+
+   /* Butonlar mobilde küçültüldü */
+   .btn {
+      font-size: 1.4rem;
+      padding: 1rem 2.5rem;
+   }
+}
+@media (max-width: 768px) {
+   .projects_container {
+       display: flex;
+       flex-direction: column; /* Alt alta sıralama */
+       align-items: center; /* Ortalamak için */
+       gap: 20px; /* Projeler arasına boşluk ekleyin */
+   }
+
+   .project_item {
+       width: 90%; /* Mobilde kutular geniş alan kaplasın */
+       max-width: 600px; /* En fazla bu genişlikte olsun */
+       margin-bottom: 20px; /* Aralarına boşluk ekle */
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .project_item img {
+       width: 100%; /* Görseller kutuya tam otursun */
+       height: auto;
+       object-fit: cover; /* Görsellerin kutuya düzgün oturması için */
+   }
+
+   .project_content {
+       text-align: center; /* Metinlerin ortalanması */
+       text-indent: 0px;
+       
+   }
 }
