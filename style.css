@@ -533,13 +533,10 @@ ul{
     
 }
 @media (max-width:1285px){
-   html{font-size: 55%;}
+   html{font-size: 60%;}
 }
 
 @media (max-width: 991px) {
-   header {
-      padding: 10rem 3% ;
-   }
 
    section{
       padding: 15rem 3% 2rem;
@@ -552,7 +549,7 @@ ul{
 .project_item:nth-child(2) {
    padding-right: 0; /* Sağ padding sıfır */
    text-align: left; /* Sol hizalama */
-   font-size: 40%;
+   font-size: 60%;
 }
 
 /* Tüm tek numaralı kutulara hizalama */
@@ -564,11 +561,9 @@ ul{
 .project_item:nth-child(even) {
    padding-right: 37px;
 }
-}
 
 
-@media (max-width: 768px) {
-   /* Header mobil uyumu */
+
    .header {
       padding: 1.5rem 3%;
       flex-direction: column; /* Dikey düzen */
@@ -612,9 +607,9 @@ ul{
       font-size: 1.4rem;
       padding: 1rem 2.5rem;
    }
-}
+
 /* Mobil cihazlar için CSS düzenlemeleri */
-@media only screen and (max-width: 768px) {
+
    .projects_container {
        display: flex;
        flex-direction: column; /* Projeleri dikey hizalayın */
