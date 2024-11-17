@@ -533,7 +533,7 @@ ul{
     
 }
 @media (max-width:1285px){
-   html{font-size: 50%;}
+   html{font-size: 55%;}
 }
 
 @media (max-width: 991px) {
@@ -550,7 +550,6 @@ ul{
    }
 
 .project_item:nth-child(2) {
-   padding-left: 37px; /* Sol padding ekledik */
    padding-right: 0; /* Sağ padding sıfır */
    text-align: left; /* Sol hizalama */
    font-size: 40%;
@@ -646,7 +645,7 @@ ul{
       flex-direction: column; /* Projeleri dikey hizalayın */
       align-items: center;
       gap: 20px; /* Projeler arasındaki boşluk */
-      margin-left: -60px;
+      margin-left: 20px;
       
    }
    .dot{
