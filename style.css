@@ -548,7 +548,7 @@ ul{
    .project-items::before{
       left: 7px;
    }
-}
+
 .project_item:nth-child(2) {
    padding-left: 37px; /* Sol padding ekledik */
    padding-right: 0; /* Sağ padding sıfır */
@@ -564,4 +564,5 @@ ul{
 /* Çift numaralı kutular */
 .project_item:nth-child(even) {
    padding-right: 37px;
+}
 }
