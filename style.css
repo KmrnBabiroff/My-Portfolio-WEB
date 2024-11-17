@@ -577,7 +577,7 @@ ul{
    }
 
    .navbar {
-      display: none; /* Mobilde açılır menü için */
+      display:inline-flex; /* Mobilde açılır menü için */
    }
 
    /* Home bölümü mobil uyumu */
@@ -614,32 +614,50 @@ ul{
       padding: 1rem 2.5rem;
    }
 }
-@media (max-width: 768px) {
+/* Mobil cihazlar için CSS düzenlemeleri */
+@media only screen and (max-width: 768px) {
    .projects_container {
        display: flex;
-       flex-direction: column; /* Alt alta sıralama */
-       align-items: center; /* Ortalamak için */
-       gap: 20px; /* Projeler arasına boşluk ekleyin */
-   }
-
-   .project_item {
-       width: 90%; /* Mobilde kutular geniş alan kaplasın */
-       max-width: 600px; /* En fazla bu genişlikte olsun */
-       margin-bottom: 20px; /* Aralarına boşluk ekle */
-       display: flex;
-       flex-direction: column;
+       flex-direction: column; /* Projeleri dikey hizalayın */
        align-items: center;
+       gap: 20px; /* Projeler arasındaki boşluk */
+   }
+   .project_item {
+       width: 90%; /* Mobilde daha küçük genişlik */
+       margin: 0 auto; /* Ortada hizalayın */
+       margin-bottom: 100px;
    }
 
-   .project_item img {
-       width: 100%; /* Görseller kutuya tam otursun */
-       height: auto;
-       object-fit: cover; /* Görsellerin kutuya düzgün oturması için */
+   .project_content img {
+       max-width: 100%; /* Görselleri mobil ekrana sığdırın */
+       height: 100%;
    }
 
-   .project_content {
-       text-align: center; /* Metinlerin ortalanması */
-       text-indent: 0px;
-       
+   /* Genel boşluk ve yazı büyüklüğü için düzenlemeler */
+   body {
+       padding: 60 10px;
+       font-size: 6px; /* Yazı boyutunu mobil için optimize edin */
+   }
+
+   .project_item:nth-child(even),
+   .project_item:nth-child(2){
+     
+      display: flex;
+      flex-direction: column; /* Projeleri dikey hizalayın */
+      align-items: center;
+      gap: 20px; /* Projeler arasındaki boşluk */
+      margin-left: -60px;
+      
+   }
+   .dot{
+      margin-left: 0%;
+      display: flex;
+      
+
+      
+   }
+
+   .Home-content h1, .Home-content h3 {
+       text-align: center; /* Başlıkları ortalayın */
    }
 }
