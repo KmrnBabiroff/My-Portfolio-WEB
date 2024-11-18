@@ -536,7 +536,34 @@ ul{
    html{font-size: 55%;}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 895px) {
+
+
+   .navbar {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 50%;
+      padding: 1rem 3%;
+      background-color: #080808;
+      backdrop-filter: blur(20px);
+      border-bottom-left-radius: 2rem;
+      border-left: 2px solid var(--main-color);
+      border-bottom: 2px solid var(--main-color);
+      display:none;
+   }
+
+   .navbar a {
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+      color:#fff
+   }
+   .navbar.active{display: block;}
+
+
+   #menu-icon{display: block;
+   cursor: pointer;}
 
    section{
       padding: 15rem 3% 2rem;
@@ -566,18 +593,16 @@ ul{
 
    .header {
       padding: 1.5rem 3%;
-      flex-direction: column; /* Dikey düzen */
+      flex-direction:row; /* Dikey düzen */
       align-items: center; /* Ortalar */
    }
 
-   .navbar {
-      display:inline-flex; /* Mobilde açılır menü için */
-   }
+
 
    /* Home bölümü mobil uyumu */
    .Home {
       flex-direction: column; /* Dikey düzen */
-      text-align: center; /* Ortalar */
+      text-align: left; /* Ortalar */
       padding: 5rem 2rem;
       gap: 2rem; /* Daha az boşluk */
    }
