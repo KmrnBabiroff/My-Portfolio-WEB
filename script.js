@@ -9,9 +9,9 @@ menuIcon.onclick = () => {
 function sendMail(){
     let parms
 = {     Name : document.getElementById("name").value,
-        Email : document.getElementById("email").value,
-        Number :document.getElementById("number").value,
-        Message:document.getElementById("message").value,
+        email : document.getElementById("email").value,
+        number : document.getElementById("number").value,
+        Message : document.getElementById("message").value,
 
 }
 
