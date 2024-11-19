@@ -5,3 +5,14 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle("bx-x");
     navbar.classList.toggle("active");
 }
+
+function sendMail(){
+    let parms
+= {     Name : document.getElementById("name").value,
+        Email : document.getElementById("email").value,
+        Number :document.getElementById("number").value,
+        Message:document.getElementById("message").value,
+
+}
+
+emailjs.send("service_3","template_m307mh4",parms).then(alert("Email Sent!!"))}
